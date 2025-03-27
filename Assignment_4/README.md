@@ -1,4 +1,4 @@
-# Quick Guide to Neural Style Transfer Using VGG19
+# Style Transfer Using VGG19
 
 ### Overview
 This notebook implements Neural Style Transfer based on the method proposed by Gatys et al. using PyTorch and a pre-trained VGG19 model.
@@ -55,11 +55,11 @@ Recommended: Run on GPU (locally or using Google Colab).
 - Style layer weights (`conv1_1` to `conv5_1`)
 - Learning rate and number of iterations
 
-```python
-content_weight = 1
-style_weight = 1e2
-steps = 4000
-optimizer = optim.Adam([target], lr=0.005)
+`Python
+- content_weight = 1
+- style_weight = 1e2
+- steps = 4000
+- optimizer = optim.Adam([target], lr=0.005)
 
 ## Expected Outputs
 - Image Filtering: Edge-detected images & bar chart.
